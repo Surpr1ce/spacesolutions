@@ -61,7 +61,9 @@ export default function Navbar() {
             <Button 
               className="bg-chart-1 hover:bg-chart-1/90 text-white"
             >
-              Získať ponuku
+              <Link href="#contact">
+                Získať ponuku
+              </Link>
             </Button>
           </nav>
           
@@ -96,7 +98,9 @@ export default function Navbar() {
               className="bg-chart-1 hover:bg-chart-1/90 text-white w-full mt-2"
               onClick={() => setIsOpen(false)}
             >
-              Získať ponuku
+              <Link href="#contact">
+                Získať ponuku
+              </Link>
             </Button>
           </nav>
         </div>

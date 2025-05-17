@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
+import Link from "next/link";
 
 export default function HeroSection() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -47,7 +48,9 @@ export default function HeroSection() {
             Od demolácie po vzduchotechniku, prinášame excelenciu v stavebníctve na medzinárodných trhoch.
           </p>
           <Button size="lg" className="bg-chart-1 hover:bg-chart-1/90 text-white">
-            Získať ponuku
+            <Link href="#contact">
+              Získať ponuku
+            </Link>
           </Button>
         </div>
       </div>
