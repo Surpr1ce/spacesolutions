@@ -37,7 +37,10 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           <Link 
             href="/" 
-            className="text-2xl font-bold text-primary font-roboto-condensed"
+            className={cn(
+                "text-2xl font-bold font-roboto-condensed",
+                isScrolled ? "text-primary" : "text-white"
+            )}
           >
             SPACE<span className="text-chart-1">SOLUTIONS</span>
           </Link>
